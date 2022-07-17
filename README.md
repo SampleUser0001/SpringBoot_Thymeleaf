@@ -9,7 +9,7 @@ mvn clean compile spring-boot:run
 
 ## URL
 
-http://localhost:8080
+http://localhost:8080/greeting
 
 ## 参考
 
