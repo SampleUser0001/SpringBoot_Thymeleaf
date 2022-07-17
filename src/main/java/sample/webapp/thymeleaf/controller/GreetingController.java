@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 import java.util.ArrayList;
 
+import sample.webapp.thymeleaf.model.DataModel;
+
 @Controller
 public class GreetingController {
 
@@ -21,5 +23,14 @@ public class GreetingController {
 		return "greeting";
 	}
 	
+	@GetMapping("/list")
+	public String list(@RequestParam(name="dataList", required=false) List<DataModel> dataList, Model model) {
+		dataList = new ArrayList<DataModel>();
+		dataList.add(new DataModel(1, "hoge"));
+		dataList.add(new DataModel(2, "piyo"));
+		
+		model.addAttribute("dataList", dataList);
+		return "list";
+	}
 
 }

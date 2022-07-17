@@ -5,10 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <h1>Data List</h1>
-    <tr th:each="data : ${dataList}">
-        <td th:text="${data.getId()}" class="tdtest"></td>
-        <td th:text="${data.getValue()}" class="tdtest"></td><br>
-    </tr>
+    <h1>Thymeleaf</h1>
+    <a href="./greeting">StringのList</a><br>
+    <a href="./list">DataModelのList</a>
 </body>
 </html>
