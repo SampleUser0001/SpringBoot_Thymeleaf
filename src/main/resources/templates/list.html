@@ -5,9 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <h1>Greeting</h1>
-    <tr th:each="name : ${nameList}">
-        Hello, <td th:text="${name}" class="tdtest"></td> !<br>
+    <h1>Data List</h1>
+    <tr th:each="data : ${dataList}">
+        <td th:text="${name}" class="tdtest"></td>
+        <td th:text="${value}" class="tdtest"></td>
     </tr>
 </body>
 </html>
